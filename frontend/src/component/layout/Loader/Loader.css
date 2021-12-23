@@ -1,0 +1,46 @@
+.loading{
+    width:100vw;
+    height:100vh;
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+
+}
+
+.loading > div{
+width: 10vmax;
+background-color: tomato;
+height: 10vmax;
+    border-bottom: 5px solid rgb(185, 176, 176);
+    border-radius: 50%;
+animation: loadingRotate .5s linear alternate infinite;
+}
+
+@keyframes loadingRotate {
+    0%{
+        transform:translate3d(0,0,0) scale3d(1,1,1);
+    }
+
+    40%{
+        transform:translate3d(0,30%,0) scale3d(.7,1.5,1);
+    }
+    100%{
+        transform: translate3d(0,100%,0) scale3d(1.5,.7,1);
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
